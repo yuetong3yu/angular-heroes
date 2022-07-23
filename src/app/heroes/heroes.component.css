@@ -64,6 +64,3 @@
 .heroes .name {
   align-self: center;
 }
-.heroes .selected-name {
-  color: red;
-}
