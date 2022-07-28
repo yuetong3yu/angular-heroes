@@ -1,7 +1,10 @@
-<h3>{{ hero.name }}</h3>
+<h2>My Heros</h2>
 
-<p *ngIf="hero.id">ID: {{ hero.id }}</p>
-<div>
-  <label for="name">Hero Name: </label>
-  <input id="name" placeholder="hero name" [(ngModel)]="hero.name" />
-</div>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <button type="button">
+      <span class="badge">{{ hero.id }}</span>
+      <span class="name">{{ hero.name }}</span>
+    </button>
+  </li>
+</ul>
