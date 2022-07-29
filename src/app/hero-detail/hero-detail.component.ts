@@ -14,7 +14,7 @@ export class HeroDetailComponent implements OnInit {
   hero?: Hero;
 
   goBack(): void {
-    console.log('go back');
+    this.locationService.back();
   }
 
   getHero(): void {
