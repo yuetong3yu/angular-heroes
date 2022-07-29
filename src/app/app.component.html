@@ -1,3 +1,7 @@
 <h2>{{ title }}</h2>
-<app-heroes></app-heroes>
+<div>
+  <a routerLink="/heroes">Heroes</a>
+  <a routerLink="/dashboard" style="margin-left: 1.5em">DashBoard</a>
+</div>
+<router-outlet></router-outlet>
 <app-messages></app-messages>

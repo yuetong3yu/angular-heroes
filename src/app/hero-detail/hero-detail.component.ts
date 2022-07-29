@@ -9,6 +9,10 @@ import { Hero } from '../hero';
 export class HeroDetailComponent implements OnInit {
   @Input() hero?: Hero;
 
+  goBack(): void {
+    console.log('go back');
+  }
+
   constructor() {}
 
   ngOnInit(): void {}
