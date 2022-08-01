@@ -1,9 +1,12 @@
 <h2>My Heros</h2>
 
-<ul class="heroes">
+<!-- Display Hero list by `heroes` length. -->
+<ul class="heroes" *ngIf="heroes.length; else NoHero">
   <li *ngFor="let hero of heroes">
     <a routerLink="/detail/{{ hero.id }}">
       <span class="badge">{{ hero.id }}</span> {{ hero.name }}
     </a>
   </li>
 </ul>
+<!-- if hero array empty -->
+<ng-template #NoHero>There is NO HERO!!!</ng-template>
